@@ -1,7 +1,7 @@
+Auteurs : Benoit Julien & Sutcu Volkan
+
 - [Livrables](#livrables)
-
 - [Échéance](#échéance)
-
 - [Travail à réaliser](#travail-à-réaliser)
 
 # Sécurité des réseaux sans fil
@@ -60,9 +60,32 @@ A manière de comparaison, réaliser l'attaque sur le [fichier de capture](files
 Un fork du repo original . Puis, un Pull Request contenant **vos noms** et :
 
 - Script ```pmkid_attack.py``` **abondamment commenté/documenté** + fichier wordlist
+  
    - Capture d’écran de votre script en action
+   
+     ![1588246026189](images/attack_1.png)
+   
+     On peut donc voir dans la dernière ligne de la capture ci-dessus que la passphrase a été trouvée, soit "admin123" et que donc, le script fonctionne parfaitement.
+   
 - Captures d'écran de votre exercice 3
--	Envoyer le hash du commit et votre username GitHub et **les noms des participants** par email au professeur et à l'assistant
+
+   **Conversion des données capturées du format pcapng en un format de hachage accepté par hashcat**
+
+   ![hashcat_1](images/hashcat_1.png)
+   
+   **Crackage via hashcat (hash mode à 16'800)**
+   
+   ###### Lancement
+   
+   ![hashcat_2](images/hashcat_2.png)
+   
+   ###### Crackage terminé et passphrase trouvée
+   
+   ![hashcat_3](images/hashcat_3.png)
+   
+   Nous pouvons observer ci-dessus, sur les 2 premières lignes, que le hash et donc le mot de passe a été trouvé.
+   
+-  Envoyer le hash du commit et votre username GitHub et **les noms des participants** par email au professeur et à l'assistant
 
 
 ## Échéance
